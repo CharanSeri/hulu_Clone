@@ -1,0 +1,37 @@
+  .videoCard{
+color: white;
+width: 350px;
+height: 350px;
+padding-left: 30px;
+transition: transform 100ms;
+}
+  .videoCard > img {
+      height: 300px;
+      width: 300px;
+      object-fit: contain;
+  }
+
+  .videoCard:hover{
+      transform: scale(1.09);
+  }
+
+  .videoCard > h2 {
+      padding-top: 10px;
+  }
+  /*Hide Scroll Bar for Chrome,Safari and Opera*/
+.videoCard::-webkit-scrollbar{
+    display: none;
+}
+/* Hide scrolbar for IE,Edge and Firefox*/
+.videoCard{
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.vedioCard_stats{
+    display: none;
+}
+
+.videoCard:hover > .vedioCard_stats{
+    display: inline;
+}
